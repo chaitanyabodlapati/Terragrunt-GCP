@@ -1,7 +1,5 @@
 # ---------------------------------------------------------------------------------------------------------------------
 # TERRAGRUNT CONFIGURATION
-# This is the configuration for Terragrunt, a thin wrapper for Terraform that helps keep your code DRY and
-# maintainable: https://github.com/gruntwork-io/terragrunt
 # ---------------------------------------------------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -20,7 +18,3 @@ include "envcommon" {
   path = "${dirname(find_in_parent_folders())}/main/instances.hcl"
 }
 
-
-# ---------------------------------------------------------------------------------------------------------------------
-# We don't need to override any of the common parameters for this environment, so we don't specify any other parameters.
-# ---------------------------------------------------------------------------------------------------------------------

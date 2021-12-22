@@ -1,7 +1,6 @@
 # ---------------------------------------------------------------------------------------------------------------------
 # TERRAGRUNT CONFIGURATION
-# Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules,
-# remote state, and locking: https://github.com/gruntwork-io/terragrunt
+
 # ---------------------------------------------------------------------------------------------------------------------
 
 locals {
@@ -28,7 +27,7 @@ generate "provider" {
 provider "google" {
   region = "${local.region}"
   zone    = "us-central1-c"
-  credentials = file("/Users/chaitu/gcp-migration-334418-1496f4dcabbe.json")
+  credentials = file("path to key.json")
   project = "gcp-migration-334418"
 }
 EOF
